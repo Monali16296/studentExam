@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('registartionForm', 'StudentController@studentInfo');
+Route::get('subjectList', 'SubjectController@getSubjects');    
+Route::get('usersList', 'UserController@getUsers');
+Route::get('rolesList', 'RoleController@getRoles');
+Route::get('countryList', 'CountryController@getCountryPosts');
