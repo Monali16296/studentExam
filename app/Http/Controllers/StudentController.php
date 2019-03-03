@@ -24,6 +24,12 @@ class StudentController extends Controller
 //        print_r($a);
 //        exit;
 //    }
+        
+        /*
+         * inserting new record in db
+         */
+        //Student::insert(['name'=>'hi']);
+        
         return view('forms.registration', compact('info'));
     }
 }

@@ -8,6 +8,7 @@ class Student extends Model
 {
     //
     protected $table = "student_form";
+    protected $fillable = ['name'];
     public function subjects() {
         return $this->hasMany('App\Subject');
         
