@@ -2,7 +2,7 @@
 
 @section('title', 'Registration')
 @section('content')
-<div class="row">  
+<div class="row a">  
     <table class="table table-bordered">
         <thead>
             <tr>
