@@ -19,3 +19,4 @@ Route::get('subjectList', 'SubjectController@getSubjects');
 Route::get('usersList', 'UserController@getUsers');
 Route::get('rolesList', 'RoleController@getRoles');
 Route::get('countryList', 'CountryController@getCountryPosts');
+Route::get('companyList', 'CompanyController@getCompanyList');
