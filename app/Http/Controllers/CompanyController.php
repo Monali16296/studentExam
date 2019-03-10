@@ -18,6 +18,23 @@ class CompanyController extends Controller
 //        $company = Company::with('manager')->get();
 //        $query = DB::getQueryLog();
 //        print_r($query);
+        
+        /*
+         * retieving data from database just like get()
+         */
+//        $company = Company::all();
+//        echo '<pre>';
+//        print_R($company);exit;
+        
+        /*
+         * for retrieving only desired no of records
+         */
+//        $company = Company::take(1)->get();
+//        echo '<pre>';
+//        print_R($company);
+//        exit;
+        
+        
         return view('forms.companies', compact('company'));
     }
 }
