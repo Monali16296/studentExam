@@ -20,3 +20,10 @@ Route::get('usersList', 'UserController@getUsers');
 Route::get('rolesList', 'RoleController@getRoles');
 Route::get('countryList', 'CountryController@getCountryPosts');
 Route::get('companyList', 'CompanyController@getCompanyList');
+
+/*
+ * try with http://localhost/studentExam/public/companyList/2 and http://localhost/studentExam/public/companyList/3
+ */
+//Route::get('companyList/{id}', function($id){
+//    return App\Company::findOrFail($id);
+//});
