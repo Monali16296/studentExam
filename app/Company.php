@@ -21,7 +21,25 @@ class Company extends Model
      */
 //    const CREATED_AT = 'creation';
 //    const UPDATED_AT = 'updation';
+    
+    /*
+     * if don't want to allow certain columns to be mass assignable 
+     * here name column would be empty and other column values would be getting inserted
+     * used for create method of inserting data
+     */    
+//    protected $guarded = ['name'];
+    
+    /*
+     * if want to allow all columns mass assignable
+     */
+//    protected $guarded = [];
 
+    /*
+     * fillable
+     * need for saving data using create mass assignment
+     * also used for security so that third party user can't change important things to column.
+     */
+    protected $fillable = ['name'];
     public function manager() {
         return $this->hasOne('App\Manager');        
     }

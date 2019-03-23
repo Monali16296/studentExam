@@ -86,6 +86,64 @@ class CompanyController extends Controller
 //        $a->name = 'aa';
 //        $a->save();
 //        exit;
+        
+        /*
+         * updating record
+         */
+//        $a = Company::find(3);
+//        $a->name = 'cd';
+//        $a->save();
+//        exit;
+        
+         /*
+         * inserting new record in db and retriving it . 
+         * make sure timestamps columns should be there for using create
+         */
+//        $a = Company::create(['name'=>'hi']);
+//        echo '<pre>';
+//        print_r($a);exit;
+
+        /*
+         * if want to save and update simultaneously
+         */
+//        $a = Company::create(['name'=>'cdddd']);
+//        $a->fill(['name' => 'abcd']);
+//        $a->save();
+//        exit;
+        
+        /*
+         * if record found with same name in db then won't be inserted otherwise new record inserted
+         */
+//        $a = Company::firstOrCreate(['name' => 'abc']);
+//        exit;
+        
+        /*
+         * same as firstorcreate but have to call save() for save record
+         */
+//        $a = Company::firstOrNew(['name' => 'abc']);
+//        $a->save();
+//        exit;        
+        
+        /*
+         * if want to update existing record or to add new record if not found
+         * here name will be updated to aa
+         */
+//        $a = Company::updateOrCreate(['name' => 'TCS', 'id' => 2], ['name' => 'aa']);
+//        exit;
+        
+        /*
+         * for deleting record
+         */
+//        $a = Company::find(15);
+//        $a->delete();
+//        exit;
+        
+        /*
+         * want to destroy by primary key without retrieving
+         */
+//        Company::destroy(16);
+//        exit;        
+        
         return view('forms.companies', compact('company'));
     }
 }

@@ -26,7 +26,7 @@ class StudentController extends Controller
 //    }
         
         /*
-         * inserting new record in db
+         * inserting new record in db but not returns inserted record
          */
         //Student::insert(['name'=>'hi']);
         
