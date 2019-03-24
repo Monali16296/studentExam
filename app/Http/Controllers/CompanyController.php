@@ -158,6 +158,19 @@ class CompanyController extends Controller
 //        print_r($a);
 //        exit;
         
+        /*
+         * retrieve only deleted records
+         */
+//        $a = Company::onlyTrashed()->get();
+//        echo '<pre>';
+//        print_r($a);
+//        exit;
+        
+        /*
+         * want to restore(set deleted_at to null) soft deleted record
+         */
+//        Company::where('id', 3)->restore();
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }
