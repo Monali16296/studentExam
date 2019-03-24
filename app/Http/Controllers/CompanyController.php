@@ -144,6 +144,20 @@ class CompanyController extends Controller
 //        Company::destroy(16);
 //        exit;        
         
+        /*
+         * mass delete
+         */
+//        Company::where('id',3)->delete();
+//        exit;
+        
+        /*
+         * deleted columns will also be retrieved.
+         */
+//        $a = Company::withTrashed()->get();
+//        echo '<pre>';
+//        print_r($a);
+//        exit;
+        
         return view('forms.companies', compact('company'));
     }
 }

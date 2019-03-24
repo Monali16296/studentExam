@@ -3,7 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+//use Illuminate\Database\Eloquent\SoftDeletes;
+
 class Company extends Model
 {
     /*
@@ -38,15 +39,13 @@ class Company extends Model
      * deleted_at column will be updated. Record won't be deleted. 
      * soft deleted records are automatically excluded from all queries.
      */
-    use SoftDeletes; 
+//    use SoftDeletes; 
     
     /*
      * fillable
      * need for saving data using create mass assignment
      * also used for security so that third party user can't change important things to column.
-     */
-    
-    
+     */  
     protected $fillable = ['name'];
     public function manager() {
         return $this->hasOne('App\Manager');        
