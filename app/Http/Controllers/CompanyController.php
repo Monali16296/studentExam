@@ -191,6 +191,14 @@ class CompanyController extends Controller
 //        echo '<pre>';
 //        print_r(Company::withoutGlobalScope(AgeScope::class)->get());
 //        exit;
+        
+        /*
+         * remove global scope
+         * in this age method is defined in company model
+         */
+//        echo '<pre>';
+//        print_r(Company::withoutGlobalScope('age')->get());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }
