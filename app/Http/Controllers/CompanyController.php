@@ -171,6 +171,14 @@ class CompanyController extends Controller
          */
 //        Company::where('id', 3)->restore();
 //        exit;
+        
+        
+        /*
+         * use of agescope to retrieve id > 1
+         */
+//        echo '<pre>';
+//        print_r(Company::all());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }

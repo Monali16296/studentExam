@@ -2,6 +2,10 @@
 
 namespace App;
 
+/*
+ * global scope
+ */
+//use App\Scopes\AgeScope;
 use Illuminate\Database\Eloquent\Model;
 //use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -46,6 +50,16 @@ class Company extends Model
      * need for saving data using create mass assignment
      * also used for security so that third party user can't change important things to column.
      */  
+    
+    /*
+     * applying global scopes
+     */
+//    protected static function boot()
+//    {
+//        parent::boot();
+//
+//        static::addGlobalScope(new AgeScope);
+//    }
     protected $fillable = ['name'];
     public function manager() {
         return $this->hasOne('App\Manager');        
