@@ -7,6 +7,10 @@ namespace App;
  */
 //use App\Scopes\AgeScope;
 use Illuminate\Database\Eloquent\Model;
+
+/*
+ * soft del
+ */
 //use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Company extends Model
