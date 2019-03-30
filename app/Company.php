@@ -6,6 +6,12 @@ namespace App;
  * global scope
  */
 //use App\Scopes\AgeScope;
+
+/*
+ * anonymous global scope 
+ */
+//use Illuminate\Database\Eloquent\Builder;
+
 use Illuminate\Database\Eloquent\Model;
 
 /*
@@ -63,6 +69,17 @@ class Company extends Model
 //        parent::boot();
 //
 //        static::addGlobalScope(new AgeScope);
+//    }
+    
+    /*
+     * anonymous global scope
+     */
+//    protected static function boot() {
+//        parent::boot();
+//        
+//        static::addGlobalScope('age', function(Builder $builder){
+//            $builder->where('id', '>', 1);
+//        });
 //    }
     protected $fillable = ['name'];
     public function manager() {
