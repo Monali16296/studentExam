@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Company;
 use Illuminate\Support\Facades\DB;
+
+/*
+ *global scope 
+ */
+//use App\Scopes\AgeScope;
 class CompanyController extends Controller
 {
     //
@@ -178,6 +183,13 @@ class CompanyController extends Controller
          */
 //        echo '<pre>';
 //        print_r(Company::all());
+//        exit;
+        
+        /*
+         * remove global scope for a give query
+         */
+//        echo '<pre>';
+//        print_r(Company::withoutGlobalScope(AgeScope::class)->get());
 //        exit;
         return view('forms.companies', compact('company'));
     }
