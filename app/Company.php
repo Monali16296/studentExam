@@ -81,6 +81,14 @@ class Company extends Model
 //            $builder->where('id', '>', 1);
 //        });
 //    }
+    
+    /*
+     * defining local scope, prefix should be scope
+     */
+    public function scopePopular($query) 
+    {
+        return $query->where('id', 2);
+    }
     protected $fillable = ['name'];
     public function manager() {
         return $this->hasOne('App\Manager');        

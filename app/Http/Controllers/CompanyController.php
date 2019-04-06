@@ -206,6 +206,13 @@ class CompanyController extends Controller
 //        echo '<pre>';
 //        print_r(Company::WithoutGlobalScopes()->get());
 //        exit;
+        
+        /*
+         * using local scopes
+         */
+//        echo '<pre>';
+//        print_r(Company::popular()->get());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }
