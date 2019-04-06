@@ -199,6 +199,13 @@ class CompanyController extends Controller
 //        echo '<pre>';
 //        print_r(Company::withoutGlobalScope('age')->get());
 //        exit;
+        
+        /*
+         * removing all global scopes
+         */
+//        echo '<pre>';
+//        print_r(Company::WithoutGlobalScopes()->get());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }
