@@ -85,10 +85,18 @@ class Company extends Model
     /*
      * defining local scope, prefix should be scope
      */
-    public function scopePopular($query) 
-    {
-        return $query->where('id', 2);
-    }
+//    public function scopePopular($query) 
+//    {
+//        return $query->where('id', 2);
+//    }
+    
+    /*
+     * defining dynamic scopes
+     */
+//    public function scopeOfType($query, $id) 
+//    {
+//        return $query->where('id', $id);
+//    }
     protected $fillable = ['name'];
     public function manager() {
         return $this->hasOne('App\Manager');        

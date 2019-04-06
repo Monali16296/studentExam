@@ -213,6 +213,13 @@ class CompanyController extends Controller
 //        echo '<pre>';
 //        print_r(Company::popular()->get());
 //        exit;
+        
+        /*
+         * using dynamic scopes
+         */
+//        echo '<pre>';
+//        print_r(Company::ofType(2)->get());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }
