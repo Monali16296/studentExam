@@ -17,6 +17,20 @@ class CompanyController extends Controller
         $company = Company::with('manager')->get();
         
         /*
+         * remove models which have id 1 and retrieve company names (collection)
+         */
+//        $names = $company->reject(function($companys) {
+//            return $companys->id == 1;
+//        })
+//        ->map(function ($companys) {
+//            return $companys->name;
+//        });
+//        
+//        echo '<pre>';
+//        print_r($names);
+//        exit;
+        
+        /*
          * if you want to print sql
          */        
 //        DB::enableQueryLog();
