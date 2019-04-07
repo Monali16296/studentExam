@@ -234,6 +234,17 @@ class CompanyController extends Controller
 //        echo '<pre>';
 //        print_r(Company::ofType(2)->get());
 //        exit;
+        
+        /*
+         * avg on collection
+         */
+//        $a = collect([['id' => 1], ['id' => 3]])->avg('id');
+//        print_r($a);
+//        exit;
+        
+//        $a = collect([1, 3, 5, 6])->avg();
+//        print_R($a);
+//        exit;
         return view('forms.companies', compact('company'));
     }
 }
