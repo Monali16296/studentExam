@@ -26,6 +26,16 @@
             </tbody>
     </table>
 </div>
+
+<!--chunk is useful when working with bootstrap grid system-->
+<!--@foreach ($company->chunk(1) as $chunk)
+<div class="row">
+    @foreach ($chunk as $co)
+    <div class="col-sm-4">{{ $co->name }}</div>
+    @endforeach
+</div>
+@endforeach-->
+
 @endsection
 
 

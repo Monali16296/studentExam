@@ -245,6 +245,19 @@ class CompanyController extends Controller
 //        $a = collect([1, 3, 5, 6])->avg();
 //        print_R($a);
 //        exit;
+        
+        /*
+         * chunk method useful for grid view
+         */
+//        $collection = collect([1, 20, 3, 5, 7, 2, 1]);
+//        $chunks = $collection->chunk(4);
+//        $a = $chunks->toArray();
+//        foreach ($a as $b) {
+//           foreach ($b as $c) {
+//               echo $c."</br>";
+//           }
+//        }exit;
+    
         return view('forms.companies', compact('company'));
     }
 }
