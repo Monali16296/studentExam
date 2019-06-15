@@ -258,6 +258,15 @@ class CompanyController extends Controller
 //           }
 //        }exit;
     
+        /*
+         * The collapse method collapses a collection of arrays into a single, flat collection
+         */
+//        $collection = collect([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+//        $collapsed = $collection->collapse();
+//        echo '<pre>';
+//        print_R($collapsed->all());
+//        exit;
+        
         return view('forms.companies', compact('company'));
     }
 }
