@@ -21,8 +21,8 @@ class Subject extends Model
      * if want to use function name as below then have to specify foreign key
      */
     
-//    public function students() {
-//        return $this->belongsTo('App\Student', 'student_id', other  key);
+//    public function student() {
+//        return $this->belongsTo('App\Student', 'student_id');
 //    }
     
     
