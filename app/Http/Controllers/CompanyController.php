@@ -344,7 +344,22 @@ class CompanyController extends Controller {
 //        print_R($diff->all());
 //        exit;
 
-
+        /*
+         * The diffKeys method compares the collection against another collection or a plain PHP array based on its keys
+         */
+//        $collection = collect([
+//            'one' => 10,
+//            'two' => 20,
+//            'three' => 80
+//        ]);
+//        $diff = $collection->diffKeys([
+//            'one' => 90,
+//            'five' => 8,
+//            'seven' => 88
+//        ]);
+//        echo '<pre>';
+//        print_r($diff->all());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 
