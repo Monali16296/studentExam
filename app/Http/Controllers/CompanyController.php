@@ -360,6 +360,14 @@ class CompanyController extends Controller {
 //        echo '<pre>';
 //        print_r($diff->all());
 //        exit;
+        
+        /*
+         * dump() same as dd() instead of stopping execution
+         */
+        $collection = collect(['john', 'jj']);
+        echo '<pre>';
+        print_r($collection->dump());
+        exit;
         return view('forms.companies', compact('company'));
     }
 
