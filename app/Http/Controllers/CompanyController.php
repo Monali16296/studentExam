@@ -372,14 +372,23 @@ class CompanyController extends Controller {
         /*
          * The each method iterates over the items in the collection and passes each item to a callback:
          */
-        $collection = collect([
-            'name' => 'john',
-            'id' => 2
-        ]);
-        $collection->each(function ($item, $key) {
-            echo $item."===".$key."</br>";
-        });
-        exit;   
+//        $collection = collect([
+//            'name' => 'john',
+//            'id' => 2
+//        ]);
+//        $collection->each(function ($item, $key) {
+//            echo $item."===".$key."</br>";
+//        });
+//        exit;  
+        
+        /*
+         * The eachSpread method iterates over the collection's items, passing each nested item value into the given
+         */
+//        $collection = collect([['john', 30], ['monu', 23]]);
+//        $collection->eachSpread(function($name, $age) {
+//            echo $name."==".$age."</br>";
+//        });
+//        exit;
         return view('forms.companies', compact('company'));
     }
 
