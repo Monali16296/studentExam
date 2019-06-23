@@ -389,6 +389,11 @@ class CompanyController extends Controller {
 //            echo $name."==".$age."</br>";
 //        });
 //        exit;
+        
+        $collection = collect(['a', 'b', 'a', 'c', 'd', 'b']);
+        echo '<pre>';
+        print_R($collection->duplicates());
+        exit;
         return view('forms.companies', compact('company'));
     }
 
