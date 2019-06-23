@@ -360,14 +360,26 @@ class CompanyController extends Controller {
 //        echo '<pre>';
 //        print_r($diff->all());
 //        exit;
-        
+
         /*
          * dump() same as dd() instead of stopping execution
          */
-        $collection = collect(['john', 'jj']);
-        echo '<pre>';
-        print_r($collection->dump());
-        exit;
+//        $collection = collect(['john', 'jj']);
+//        echo '<pre>';
+//        print_r($collection->dump());
+//        exit;
+
+        /*
+         * The each method iterates over the items in the collection and passes each item to a callback:
+         */
+        $collection = collect([
+            'name' => 'john',
+            'id' => 2
+        ]);
+        $collection->each(function ($item, $key) {
+            echo $item."===".$key."</br>";
+        });
+        exit;   
         return view('forms.companies', compact('company'));
     }
 
