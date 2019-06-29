@@ -390,10 +390,13 @@ class CompanyController extends Controller {
 //        });
 //        exit;
         
-        $collection = collect(['a', 'b', 'a', 'c', 'd', 'b']);
-        echo '<pre>';
-        print_R($collection->duplicates());
-        exit;
+        /*
+         * the duplicates method retrieves and returns duplicate values from the collection:
+         */
+//        $collection = collect(['a', 'b', 'a', 'c', 'd', 'b']);
+//        echo '<pre>';
+//        print_R($collection->duplicates());
+//        exit;
         return view('forms.companies', compact('company'));
     }
 
