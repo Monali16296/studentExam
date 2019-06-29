@@ -27,3 +27,5 @@ Route::get('companyList', 'CompanyController@getCompanyList');
 //Route::get('companyList/{id}', function($id){
 //    return App\Company::findOrFail($id);
 //});
+Route::get('employeeList', 'EmployeeController@getEmployeeList');
+Route::get('codeList', 'codeController@getCodeList');
