@@ -31,3 +31,4 @@ Route::get('employeeList', 'EmployeeController@getEmployeeList');
 Route::get('codeList', 'CodeController@getCodeList');
 Route::get('homeList', 'HomeController@getHomeList');
 Route::get('windowList', 'WindowController@getWindowList');
+Route::view('welcome', 'welcome', ['name' => 'monali']);
