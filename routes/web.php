@@ -31,4 +31,12 @@ Route::get('employeeList', 'EmployeeController@getEmployeeList');
 Route::get('codeList', 'CodeController@getCodeList');
 Route::get('homeList', 'HomeController@getHomeList');
 Route::get('windowList', 'WindowController@getWindowList');
-Route::view('welcome', 'welcome', ['name' => 'monali']);
+//Route::view('welcome', 'welcome', ['name' => 'monali']);
+
+/*
+ * optional parameter can be given using ? 
+ * if name won't there then default value aa will be passed
+ */
+//Route::get('uName/{name?}', function($nam='aa') {
+//    return $nam;
+//});
