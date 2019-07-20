@@ -40,3 +40,11 @@ Route::get('windowList', 'WindowController@getWindowList');
 //Route::get('uName/{name?}', function($nam='aa') {
 //    return $nam;
 //});
+
+/*
+ * regular expression on id parameter
+ * if anything except digits will be passes then 404 error would be generated
+ */
+//Route::get('userToken/{id}', function($id) {
+//    return $id;
+//})->where('id', '[0-9]+');
