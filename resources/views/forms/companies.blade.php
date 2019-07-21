@@ -25,6 +25,7 @@
             @endforeach               
             </tbody>
     </table>
+    <div><a href="{{route('abc')}}">inspect route ex</a></div>
 </div>
 
 <!--chunk is useful when working with bootstrap grid system-->

@@ -14,4 +14,13 @@ class WindowController extends Controller {
         return view('forms.window', compact('a'));
     }
 
+    /*
+     * inspect route
+     */
+    public function getWindowList2(Request $request) {
+        if ($request->route()->named('abc')) {
+            echo 'inspecting route';            
+        }
+    }
+
 }

@@ -48,3 +48,8 @@ Route::get('windowList', 'WindowController@getWindowList');
 //Route::get('userToken/{id}', function($id) {
 //    return $id;
 //})->where('id', '[0-9]+');
+
+/*
+ * Inspecting The Current Route
+ */
+Route::get('def', 'WindowController@getWindowList2')->name('abc');
