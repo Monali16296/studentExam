@@ -53,3 +53,13 @@ Route::get('windowList', 'WindowController@getWindowList');
  * Inspecting The Current Route
  */
 Route::get('def', 'WindowController@getWindowList2')->name('abc');
+
+/*
+ * By default the RouteServiceProvider includes your route files within a namespace group, 
+ * allowing you to register controller routes without specifying the full App\Http\Controllers namespace prefix. 
+ * but controller is defined in another folder then we can create namespece group for that folder.
+ */
+Route::namespace('controllerTesting')->group(function() {
+    Route::get('ghi', 'NamespaceExampleController@demoNamespace');
+});
+        
