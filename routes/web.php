@@ -62,4 +62,13 @@ Route::get('def', 'WindowController@getWindowList2')->name('abc');
 Route::namespace('controllerTesting')->group(function() {
     Route::get('ghi', 'NamespaceExampleController@demoNamespace');
 });
+
+/*
+ * all routes who have prefix admin will come into this group
+ */
+Route::prefix('admin')->group(function() {
+    Route::get('jkl', function() {
+        echo 'prefix example';
+    });
+});
         
