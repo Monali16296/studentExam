@@ -65,6 +65,7 @@ Route::namespace('controllerTesting')->group(function() {
 
 /*
  * all routes who have prefix admin will come into this group
+ * use http://localhost/studentExam/public/admin/jkl
  */
 Route::prefix('admin')->group(function() {
     Route::get('jkl', function() {
