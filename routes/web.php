@@ -72,4 +72,14 @@ Route::prefix('admin')->group(function() {
         echo 'prefix example';
     });
 });
+
+/*
+ * implicit binding in route
+ * in this case route segment name and model var name should be matched
+ * http://localhost/studentExam/public/implicit/binding/1
+ * here 1 is student id
+ */
+Route::get('implicit/binding/{student}', function (App\Student $student) {
+    return $student->name;
+});
         
